@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pra.css">
+
+</head>
+<body>
+<h1 id="ope">hello world</h1>
+    <button  onclick="ope()">turn on</button>
+    <h1 id="bye"></h1>
+    <img id='para' src='closed.jpeg' alt="my">
+    <button onclick="clos()">turn off</button>
+    <h1 id="hey"></h1>
+ <button type="button" onclick="window.print()">printer</button>
+
+<style>
+#ope{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    
+
+}
+
+
+</style>
+    
+
+
+    <script>
+        function clos(){
+            document.getElementById('para').src='closed.jpeg';
+            document.getElementById('bye').innerHTML="";
+            document.getElementById('hey').innerHTML="turned off";
+           //alert("turned off");
+           
+        
+        }
+        function ope(){
+            document.getElementById('para').src='open.jpeg';
+            document.getElementById('hey').innerHTML="";
+            document.getElementById('bye').innerHTML="turned on";
+            //alert("turned on");
+        }
+
+            </script>
+</body>
+</html>
