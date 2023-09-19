@@ -16,26 +16,49 @@
         </ul>
       </nav>
 </header>
-<body>
-<h1 id="ope">hello world</h1>
+<body >
+<h1 style="color: blueviolet;"  id="ope">hello world</h1>
+
+
+<p id="bodyy">bukaayo saka</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
 
 
 
 <img id="para" src="" alt="">
     
+<div>
     <button onclick="ope()">turn on</button>
     <button onclick="clos()">turn off</button>
-    
+    <button onclick="pra()" type="button"> buttoneds</button>
+</div>
+   
 
 
 <style>
-#btn2{
-    display: flex;
-    justify-content: center;
-    height:100%;
+
+
+
+*{
+    border: 2px;
+    border-color: rgb(97, 179, 74);
+    border-style: solid;
+ 
+
 }
-#navi{
-    display: block;
+body{
+    background-color: bisque;
+    background-image: url('prac.jpg');
+    background-repeat:no-repeat;
+    background-position: top;
+    background-attachment: scroll;
+
+    
+}
+#bodyy{
+    /* background-image: url("closed.jpeg"); */
 }
 
 </style>
@@ -44,19 +67,24 @@
 
     <script>
         function clos(){
-            document.getElementById('para').src='';
+            document.getElementById('para').src='closed.jpeg';
             document.getElementById('bye').innerHTML="";
-            document.getElementById('hey').innerHTML="turned off";
+            document.getElementById('ope').innerHTML="turned off";
            //alert("turned off");
            
         
         }
         function ope(){
             document.getElementById('para').src='open.jpeg';
+            document.getElementsByTagName(body)[0].style.backgroundImage.src='open.jpeg';
             document.getElementById('hey').innerHTML="";
             document.getElementById('bye').innerHTML="turned on";
-            
-            //alert("turned on");
+        }
+
+        function pra(){
+
+          document.getElementById("bodyy").innerHTML="hello world";
+
         }
 
             </script>
