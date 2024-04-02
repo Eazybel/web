@@ -5,3 +5,15 @@
     justify-content: center;
     
 }
+.confirm{
+    text-align: center;
+    margin-top: 408px;
+} 
+#btn{
+   border-radius: 2px;
+   width: 155px;
+   height: 33px;
+   border: 1px;
+   border-color: rgba(231, 227, 227, 0.74);
+
+}
